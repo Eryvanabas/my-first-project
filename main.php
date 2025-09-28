@@ -7,35 +7,38 @@
     </head>
     <body>
 
-           
+           <div id="mother">
     <form action="" method="post">
-        <h1>log in</h1>
-        <div class="input"><input type="text" placeholder="username" name="username"  required></div>
-        <div class="input"><input type="password" placeholder="password" name="password"required></div>
-        <div class="rember">
-           <label for=""> <input type="checkbox" name="checkbox">Remember me </label> 
-           <a href="33">Forget password</a><div>
-            <button class="btn" type="submit">Login</button>
-            <div class="rig"><p>Dont have an account <a href="Regster"></a></p></div>
+        <aside>
+           <div id="div"> 
+            <img src=""  alt="logo">
+            <h3>logoo </h3>
+            <lable> id</lable><br>
+            <input type="text" placeholder="id" name="id"  id="id" required><br>
+            <lable> name </lable><br>
+            <input type="text" placeholder="name" name="name"  id="name" required><br>
+             <lable>address </lable><br>
+            <input type="text" placeholder="address" name="address"  id="address" required><br>
+            <button name="add">add student</button>
+            <button name="del">delet student</button>
+           </div>
+             </aside>
+<!--  display data-->
+        <main>
+<table id="tb1">
+<tr>
+    <td>id</td>
+     <td>name</td>
+      <td>address</td>
+</tr>
+</table>
+
+        </main>
     </form>
+</div>
     <?php
     
-    if($_SERVER["REQUEST_METHOD"]=="POST")
-    {
-       echo $te=$_POST['username'];
-        echo $pas=$_POST['password'];
-        
-        
-    }
-    $name="azad";
-    $age=23;
-    echo "his name".$name."amd ahe".$age;
-    $a=array(2,8.9,"ee");
-    foreach ($a as $index) {
-        # code...
-        echo $index."<br/>";
-    }
-
+    
      ?>
     
     </body>
